@@ -1,23 +1,23 @@
 <div id="subscribe">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <h1 class="subs-title">Subscribe to news letter :</h1>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="subcrb-form">
-                    <form class="subscription registerForm">
-                        <div class="input-group">
-                            <input type="email" name="formInput[email]" value="" class="form-control" placeholder="Your Email:" required="" title="valid email is required" id="emaill">
-                            <span class="input-group-btn">
-                            <button class="btn btn-secondary" type="submit" value="submit" id="submit-btn"><i class="fa fa-paper-plane-o"></i></button>
-                          </span>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <h1 class="subs-title">Subscribe to news letter :</h1>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="subcrb-form">
+                                <form class="subscription registerForm">
+                                    <div class="input-group">
+                                        <input type="email" name="formInput[email]" value="" class="form-control" placeholder="Your Email:" required="" title="valid email is required" id="emaill">
+                                        <span class="input-group-btn">
+                                        <button class="btn btn-secondary" type="submit" value="submit" id="submit-btn"><i class="fa fa-paper-plane-o"></i></button>
+                                        </span>
+                                    </div>
+                                    <input type="hidden" name="action" value="submitform">
+                                </form>
+                            </div>
                         </div>
-                        <input type="hidden" name="action" value="submitform">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+                    </div>
+                </div>  
     <!--=== Right Fixed Appiontment Form ===-->
     <div id="appiontment-now-box">
         <p class="toggle">APPOINTMENT</p>
