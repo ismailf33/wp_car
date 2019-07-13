@@ -78,12 +78,14 @@
                         </div>
                         <div class="col-md-9">
                             <div class="nav-wrapper">
-                                <nav class="main-navigation">
-                                    <ul class="main-menu">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about-us.html">about us</a> </li>
-                                        <li><a href="contact-us">Contact Us</a></li>
-                                    </ul>
+                                <nav class="main-navigation">                                
+                                    <?php
+                                    wp_nav_menu( array(
+                                    'theme_locaiton ' => 'header-menu',
+                                    'container_class' => 'main-navigation',
+                                    'items_wrap' => '<ul class="main-menu">%3$s</ul>' //can't understand....
+                                    ));                               
+                                    ?>                                 
                                 </nav>
                             </div>
                         </div>
