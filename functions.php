@@ -26,3 +26,10 @@ function wp_car_enqueue(){
     wp_enqueue_script( 'Custom', get_template_directory_uri().'/js/custom.js', array('jquery'), 2.0 , true);
     
     }
+function wp_car_menu() {
+    if(function_exists('register_nav_menu')){
+    register_nav_menu('header-menu',__( 'Header Menu' ));
+    register_nav_menu('footer-menu',__( 'Feader Menu' ));
+    }
+}
+add_action( 'init', 'wp_car_menu' );
