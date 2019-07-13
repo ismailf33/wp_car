@@ -15,13 +15,13 @@
                             <div class="post-box">
                                 <div class="inner-post-box">
                                     <div class="image-box">
-                                        <a href=""><img class="img-responsive transition7s" src="<?php echo get_template_directory_uri();?>/images/resource/blog-1.jpg" alt=""></a>
+                                        <a href=""><?php the_post_thumbnail( 'myThumb',array('class' => 'post-thumb' )); /*----this class using for image style-----*/?></a>
                                         <div class="post-caption transition7s">
                                             <ul>
                                                 <li><i class="fa fa-user"></i><?php the_author();?></li>
-                                                <li><i class="fa fa-calendar"></i><?php// the_date();?></li>
+                                                <li><i class="fa fa-calendar"></i><?php the_date();?></li>
                                                 <li><i class="fa fa-comment"></i><?php
-                                                comments_popup_link( 'No comments yet', '1 comment', '% comments', 'comments-link');
+                                                comments_popup_link( 'No comments', '1 comment', '% comments', 'comments-link');
                                                 ?></li>
                                             </ul>
                                         </div>
