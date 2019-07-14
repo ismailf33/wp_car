@@ -73,7 +73,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 logo">
-                            <a href="<?php  site_url('/'); // bloginfo( 'url' );  esc_url(home_url('/'));?>"><img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt=""></a>
+                            <a href="<?php bloginfo( 'url' );  //  site_url('/');  esc_url(home_url('/'));?>"><img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt=""></a>
                             <div class="responsive-menu"></div>
                         </div>
                         <div class="col-md-9">
