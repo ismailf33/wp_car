@@ -1,0 +1,299 @@
+@media only screen and (max-width: 1199px) {
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.main-navigation .main-menu li a {padding: 20px 12px;}
+
+.hlp {text-align: center; width: 100%;}
+.phn {width: 100%;}
+.hlp-atrn {text-align: center; width: 100%;}
+.phn-atrn {width: 100%;}
+.nav.navbar-nav.navbar-right.contact-time { height: 65px;}
+.nav.navbar-nav.navbar-right.contact-time *::before { height: 65px;}
+.team-bottom {display: none;}
+.team-name {margin-top: 0px;}
+.team-single-description {padding: 15px;}
+.team-deg::after {display:none;}
+.team-portfolio-deg::after {left:0;}
+.subs-title {font-size: 29px; margin-top: 0px;}
+.welcome-landing-contact-title {padding-left: 0;text-align: center;}
+.order-button > a {text-align: center;}
+.team-single-description-img p {line-height: 40px;}
+.team-single-description-img::before {bottom: 113px;}
+.team-single-description p {margin-bottom: 11px;line-height: 23px;}
+.team-deg {font-size: 18px;margin: 0px 0 10px;line-height: 16px;}
+.slide-image-2 {margin-top: 60px !important;}
+.post-time-inner {margin-top: 0;}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1900px) {
+.nav.navbar-nav.main-menu-v3-left > li > a .caret {display: none;}
+.nav.navbar-nav.main-menu-v1-left> li > a .caret {display: none;}
+.nav.navbar-nav.main-menu-v2-left> li > a .caret {display: none;}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+.logo {padding: 10px 0;}
+.order-button > a {text-align: center;}
+.order-button-v2 {margin-top: 6px;line-height:20px;}
+.counter-area {	margin-bottom: 30px;}
+/*custom mean menu*/
+
+.logo {
+	padding: 10px 0;
+	position: relative;
+	z-index: 99999999999;
+}
+.mean-container .mean-bar {
+	position: absolute;
+	background: transparent;
+	z-index: 12;
+	top: 12px;
+}
+.mean-container a.meanmenu-reveal span {
+	background: #000;
+}
+.mean-container a.meanmenu-reveal {
+	border: 1px solid #000;
+	margin-right: 15px;
+	margin-top: 2px;
+}
+.meanmenu-reveal.meanclose {
+	color: #000 !important;
+}
+.mean-container .mean-nav {
+	margin-top: 53px;
+}
+
+#working-hours-area .accordion2 .working-content .link i {right: 0;}
+}
+@media only screen and (min-width: 619px) and (max-width: 767px) {
+.header-top-search input[type="text"] {width: 98px;}	
+.header-top-search button {float: right;}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.header-top-search input[type="text"] {width: 194px;}
+.header-top-search button {float: right;}
+
+.social-left{border-bottom: 2px solid #ffffff;width: 100%;}
+.openign-hours {border-bottom: 2px solid #ffffff;text-align: center;width: 100%;}
+.header_social_icon ul li {float: none;display: inline-block;}
+.header_social_icon {text-align: center;}
+.top-right-menu {text-align: center;width: 100%;}
+#header-top-section .top-right ul li, #header-top-section-v2 .top-right ul li {display: inline;float: none;line-height: 33px;margin-right: 20px;margin-left:0;}
+.header-content-v2 {padding: 2px 0;}
+.order-button-v2 {padding: 10px 12px;}
+#header-top-section .top-right, #header-top-section-v2 .top-right {float: none;}
+.about-right-area .img-responsive.img-center {width: 100%;}
+.nav.navbar-nav.main-menu-v2-left > li > a {font-size: 10px;padding: 20px 6px;}
+.nav.navbar-nav.main-menu-v2-left > li:last-child a {padding: 0px 10px;}
+.navbar.navbar-default.main-menu-v2 .navbar-brand {margin-top: -2px;}
+.nav.navbar-nav.navbar-right.get-quate {width: 100%;}
+.order-button.header-top-section-v2.transition3s {margin: 20px 0;width: 100%;}
+.subs-title {font-size: 22px; margin-top: 0px;}
+.slider ul li .slider-content {top: -7%;}
+.slider h2 {font-size: 35px;line-height: 40px;}
+.slider h3 {font-size: 21px; margin-bottom: 5px;padding: 0 20px 25px;}
+.slider-button a { font-size: 15px; line-height: 20px;}
+.consultation-section-title {text-align: left;}
+.sub-heading-one {text-align: left;}
+.home-2-about-description { margin-bottom: 50px;}
+#about {padding: 60px 0 100px;}
+.welcome-description {margin-bottom: 40px;}
+.landing-about-image {float: none;  margin-left: 0 !important;}
+.hlp-atrn {text-align: center; width: 100%;}
+.phn-atrn {width: 100%;}
+.news-section-single .post-box {min-height: 431px;}
+.team-bottom {display: none;}
+.team-name {margin-top: 0px;font-size: 20px;}
+.team-single-description {padding: 32px 10px 10px 10px;}
+.team-deg {font-size: 15px;line-height: 28px;margin-top:0px;}
+.team-single-description p {margin-bottom: 20px;line-height: 19px;font-size: 13px;}
+.team-deg::after {display:none;}
+.team-portfolio-deg::after {display: none;}
+.team-single-portfolio {text-align: center;}
+.welcome-landing-contact-title {font-size: 20px;}
+.welcome-landing-banner-text > h2 {font-size: 40px;line-height: 50px;}
+
+.slider-v1 .slide-single-content > h2 {font-size: 30px;}
+.slide-image-2 {margin-top: 50px;}
+
+
+}
+
+@media only screen and (min-width: 560px) and (max-width: 767px) {
+.news-section-single img { width: 767px;}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+.header-top-search {width: 100%;}
+#gallery-one .gallery-icon-inner i {margin-bottom: 10px;}
+
+.separatetor {width: 100%;}
+.scrollup { display: none !important;}
+.section-title::before, .section-title::after {content: none;}
+.section-title {padding: 10px;}
+.contact_us {margin-bottom: 70px;padding: 30px 20px 10px;}
+#appiontment-now-box {display: none;}
+.social-left{border-bottom: 2px solid #ffffff;width: 100%;}
+.openign-hours {border-bottom: 2px solid #ffffff;text-align: center;width: 100%;}
+.header_social_icon ul li {float: none;display: inline-block;}
+.header_social_icon {text-align: center;}
+.top-right-menu {text-align: center;width: 100%;}
+#header-top-section .top-right ul li, #header-top-section-v2 .top-right ul li {display: inline;float: none;line-height: 33px;margin-right: 20px;margin-left:0;}
+.header-content-v2 {padding: 2px 0;}
+.order-button-v2 {padding: 10px 12px;}
+#header-top-section .top-right, #header-top-section-v2 .top-right {float: none;}
+.about-right-area .img-responsive.img-center {width: 100%;}
+.single-page-description {margin-top: 30px;}
+.subs-title {margin-top: -15px;text-align: center;}
+.counter_name {margin-bottom: 50px;}
+.post-box {margin-right: 0;}
+.navbar-nav {margin: 0;}
+.nav.navbar-nav.main-menu-v1-left.sm-collapsible {padding-left: 0px;}
+.consultation-section-title {text-align: center;line-height: 45px;}
+.sub-heading-one {text-align: center;}
+.home-2-about-description{margin-bottom: 30px;}
+#testimonials-Section .section-title::before, #testimonials-Section .section-title::after {display:none;}
+.slider ul li .slider-content {top: -15%;}
+.slider h2 {font-size: 35px;line-height: 40px;}
+.slider h3 {font-size: 21px; margin-bottom: 5px;padding: 0 20px 10px;}
+#about {padding: 60px 0 100px;}
+.welcome-description {overflow: hidden;margin-bottom: 48px;}
+.landing-about-image {float: none;  margin-left: 0 !important;}
+.welcome-landing-contact-title { background: #d0a762 none repeat scroll 0 0; font-size: 18px;line-height: 49px; padding-left: 0; text-align: center;}
+.welcome-landing-contact .btn.btn-primary.btn-big {font-size: 16px;}
+.navbar-nav.sm-collapsible .caret, .navbar-nav.sm-collapsible ul .caret {margin: 0px 15px 0 0;}
+.counter-area{margin-bottom:30px;}
+.navbar-toggle {padding: 10px 10px;background: #000;border: 1px aliceblue;}
+.team-portfolio-deg::after {display:none;}
+#practice-wrap .prac {margin: 0;}
+.modal-dialog {	width: 300px;}
+.single-page-description-left img {width: 100%;}
+.single-team {margin-bottom: 50px;}
+.team-bottom h3 {line-height: 30px;	margin-bottom: 20px;}
+.slider-v1 .slide-single-content {text-align: center;}
+.slider-v1 .slide-single-content > h2 {font-size: 30px;margin: 0 60px;}
+.btn-1{	margin-bottom: 10px;min-width: 156px;margin-left: 20px;}
+.department-item {margin-bottom: 20px;}
+.slider-v1 .slide-single-content {padding: 70px 0 90px;}
+.main-banner-right > h2 {margin-top: 100px;}
+#doctor-page .team-item img{width:100%;}
+.navbar-fixed-top{position: static !important;}
+.main-slider-v1 .item .slide-description .btn-1 {margin-top: 30px;}
+.post-time-inner {margin-top: 0;}
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 618px) {
+.company {border-bottom: 1px solid #ffffff;width: 100%;}
+.company-info {overflow: hidden;text-align: center;}
+.company-info ul li {float: none;text-align: center;display:block;}	
+.company-info ul li i {color: #ffffff; display: inline-block;float: none;}
+.social {text-align: center;width: 100%;}
+.header_social {text-align: center;}
+.slider ul li .slider-content {top: -35%;}
+.slider h2 {font-size: 30px;line-height: 35px;}
+.slider h3 {font-size: 20px;}
+#appiontment-now-box {display: none;}
+
+.lanLogo {text-align: center;width: 100%;}
+.lanLogo-right {text-align: center;width: 100%;}
+.wolcome-note {width: 100%;}
+.welcome-form {width: 100%;}
+.welcome-landing-header-area {height: 180px;overflow: hidden;}
+.welcome-landing-info {text-align: center;}
+.welcome-landing-contact {margin: 0 auto;margin-bottom:50px;}
+.icon.circle {left: 41%;}
+.landing-about-inner {margin: 45px 0 0 15px;}
+.welcome-landing-banner-text > h2 {margin: 10px auto 40px;text-align: center;}
+.banner-text-inner > p {display: none;}
+.slider ul li .slider-content {top: -15%;}
+.slider h2 {font-size: 35px;line-height: 40px;}
+.slider h3 {font-size: 21px; margin-bottom: 5px;padding: 0 20px 25px;}
+.slider-button a { font-size: 15px; line-height: 20px;}
+.subs-title {font-size: 18px;}
+.contact_us .btn-white {width: 100%;}
+#testimonials-Section .section-title {font-size: 30px;}
+.section-title { font-size: 30px;}
+.welcome-landing-header-area {border-bottom: 2px solid #ffffff; height: 180px; margin-bottom: 30px; overflow: hidden;}
+.welcome-landing-banner-text > h2 {font-size: 40px;  margin: 10px auto 40px;text-align: center;}
+.welcome-landing-banner-text > h2 {font-size: 40px;line-height: 50px; margin: 2px auto 27px 1px; text-align: center;}
+.welcome-landing-contact-title { background: #d0a762 none repeat scroll 0 0; font-size: 18px;line-height: 49px; padding-left: 0; text-align: center;}
+.welcome-landing-contact .btn.btn-primary.btn-big {font-size: 16px;}
+.portfolio-image { width: 100%;}
+.navbar-nav.sm-collapsible .caret, .navbar-nav.sm-collapsible ul .caret {margin: 5px 15px 0 0;}
+.banner-text-inner > h2 {font-size: 25px;line-height: 30px;}
+.emergency-call .phone {font-size: 33px;line-height: 30px;}
+#gallery-two .simplefilter li, .multifilter li, .sortandshuffle li {width: 100%;}
+#gallery-one .simplefilter li, .multifilter li, .sortandshuffle li {margin-bottom: 5px; width: 100%;}
+
+}
+
+
+@media only screen and (max-width: 500px) {
+.slider h2 {font-size: 18px;line-height: 20px;}
+.slider h3 {font-size: 15px;}
+.slider-button a { width: 131px;}
+.slider h3 {margin-bottom: -15px;}	
+.welcome-landing-header-area {border-bottom: 2px solid #ffffff; height: 180px; margin-bottom: 30px; overflow: hidden;}
+.welcome-landing-banner-text > h2 {font-size: 28px; margin: 2px auto 41px; text-align: center;}
+.welcome-landing-contact-title {font-size: 18px; line-height: 40px; padding-left: 0;}
+.welcome-landing-banner-text > h2 {font-size: 40px;line-height: 50px; margin: 2px auto 27px 1px; text-align: center;}
+}
+
+@media only screen and (min-width: 344px) and (max-width: 469px) {
+.company {border-bottom: 1px solid #ffffff;width: 100%;}
+.company-info {overflow: hidden;text-align: center;}
+.company-info ul li {float: none;text-align: center;display:block;}	
+.company-info ul li i {color: #ffffff; display: inline-block;float: none	}
+.contact_us .btn-white {width: 100%;}
+.welcome-landing-contact-title {font-size: 18px; line-height: 40px; padding-left: 0;}
+.welcome-landing-banner-text > h2 {font-size: 40px;line-height: 50px; margin: 2px auto 27px 1px; text-align: center;}
+.portfolio-image { width: 100%;}
+}
+@media only screen and (min-width: 321px) and (max-width: 379px) {
+.slider ul li .slider-content {top: -27%;}
+}
+@media only screen and (max-width: 320px) {
+.slider h2 {font-size: 18px;line-height: 20px;}
+.slider h3 {font-size: 15px;}
+.slider-button a { width: 131px;}
+.slider h3 {margin-bottom: -15px;}
+.slider-button a {font-size: 18px;line-height: 23px;margin-right: 5px;}
+.slider ul li .slider-content {top: -32%;}
+.section-title::before, .section-title::after {content: none;}
+.section-title {padding: 10px;}
+.testimonial_text {width: 100%;text-align: center;}
+.separatetor {width: 100%;}
+.partner-box-inner {text-align: center;}
+.social-left{border-bottom: 2px solid #ffffff;width: 100%;}
+.openign-hours {border-bottom: 2px solid #ffffff;text-align: center;}
+.header_social_icon ul li {float: none;display: inline-block;}
+.header_social_icon {text-align: center;}
+.top-right-menu {text-align: center;width: 100%;}
+#header-top-section .top-right ul li, #header-top-section-v2 .top-right ul li {display: inline;float: none;line-height: 33px;margin-right: 20px;margin-left:0;}
+.header-content-v2 {padding: 2px 0;}
+.order-button-v2 {padding: 10px 12px;}
+.slider-button a { font-size: 15px; line-height: 15px;}
+.contact_us .btn-white {width: 100%;}
+.lanLogo {text-align: center;width: 100%;}
+.lanLogo-right {text-align: center;width: 100%;}
+.wolcome-note {width: 100%;}
+.welcome-form {width: 100%;}
+.welcome-landing-header-area {border-bottom: 2px solid #ffffff; height: 180px; margin-bottom: 30px; overflow: hidden;}
+.welcome-landing-banner-text > h2 {line-height: 50px;margin: 0 auto 40px;text-align: center;}
+.welcome-landing-contact-title {background: #d0a762 none repeat scroll 0 0;font-size: 27px;line-height: 40px;padding-left: 0;text-align: center;}
+.welcome-landing-contact {margin-bottom: 50px;}
+.icon.circle {left: 35%;}
+.landing-about-inner {margin: 45px 0 0 15px;}
+.welcome-landing-contact-title {font-size: 18px; line-height: 40px; padding-left: 0;}
+.welcome-landing-contact .btn.btn-primary.btn-big {font-size: 16px;}
+.signUp-area h3 {font-size: 30px;}
+.time {font-size: 20px;}
+.contact_us .btn {padding: 10px 0px;font-size: 13px;text-align: center;}
+
+.main-slider-v1 .item .slide-description .btn-2 {margin-left: 13px;	margin-bottom: 30px;}
+}
