@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html <?php language_attributes();?>>
 
 <head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <!-- Meta Tags -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -9,7 +10,7 @@
     <meta name="keywords" content="Repair ,Servicing ,Mechanic">
     <meta name="author" content="Theme Moor">
     <!-- Page Title -->
-    <title>Car Care | Responsive HTML5 Template 1.1.0</title>
+    <title> <?php bloginfo('name'); ?> </title>
     <!-- Apple Touch Icons &Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="images/fav-icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/fav-icon/apple-icon-60x60.png">
