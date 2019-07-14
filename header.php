@@ -24,8 +24,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/fav-icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/fav-icon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/fav-icon/favicon-16x16.png">
-    <!-- Master css File Here -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/master.css">
+   
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

@@ -102,31 +102,8 @@
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </a>
     <!-- Footer Scripts Area -->
-    <!-- All JS File Here -->
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <!-- Bootstrap Min Js File -->
-    <script src="js/bootstrap.min.js"></script>
-    <!--  wow Js File  -->
-    <script src="js/wow.min.js"></script>
-    <!-- Owl Carousel -->
-    <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/owlcarousel/owl.carousel.min.js"></script>
-    <!-- jquery ui -->
-    <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery-ui.min.js"></script>
-    <!-- jquery Counter -->
-    <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/waypoints.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.counterup.min.js"></script>
-    <!-- hero menu -->
-    <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/accordian-a2r.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.meanmenu.js"></script>
-    <!-- Skillbar -->
-    <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/skill.bars.jquery.js"></script>
-    <!-- mixit-up -->
-    <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.filterizr.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/filterize-controls.js"></script>
-    <!-- magnific-popup -->
-    <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.magnific-popup.min.js"></script>
-    <!-- Custom JS File -->
-    <script src="js/custom.js"></script>
+<!-- <script src="js/jquery-2.2.4.min.js"></script>  -->
+
 <?php wp_footer();?>
 </body>
 </html>
