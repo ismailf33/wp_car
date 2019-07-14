@@ -34,4 +34,4 @@ function wp_car_menu() {
     register_nav_menu('footer-menu',__( 'Feader Menu' ));
     }
 }
-add_action( 'init', 'wp_car_menu' );
+add_action('init', 'wp_car_menu');
