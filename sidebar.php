@@ -3,8 +3,10 @@
                         <div class="siderbar-widget">
                             <h4 class="sidebar-widget-title">Search</h4>
                             <div class="search-form">
-                                <input class="search-field" placeholder="Search" value="" type="text">
+                            <form action="http://localhost/me/wordpress/" method="get">   
+                                <input type="search" class="search-field" placeholder="Search" name="s" >
                                 <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>     
                             </div>
                         </div>
                         <div class="siderbar-widget">
