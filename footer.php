@@ -99,36 +99,11 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="footer-widget">
-                        <h2 class="widget-title">Our Services</h2>
-                        <ul>
-                            <li><a href="#">Car repair and change service</a></li>
-                            <li><a href="#">Car selling and buying service</a></li>
-                            <li><a href="#">Test driving and speed test</a></li>
-                            <li><a href="#">Car cleaning and washing</a></li>
-                            <li><a href="#">Yearly car inspection view</a></li>
-                            <li><a href="#">Car selling and buying service</a></li>
-                            <li><a href="#">Test driving and speed test</a></li>
-                            <li><a href="#">Car cleaning and washing</a></li>
-                        </ul>
-                    </div>
+                    <?php dynamic_sidebar('foot_one_widget');?>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="footer-widget">
-                        <h2 class="widget-title">Our Support</h2>
-                        <ul>
-                            <li><a href="#">Customer testimonials</a></li>
-                            <li><a href="#">Get a free quote</a></li>
-                            <li><a href="#">Help &amp; Support Center</a></li>
-                            <li><a href="#">How to get started?</a></li>
-                            <li><a href="#">Frequently asked questions</a></li>
-                            <li><a href="#">Get a free quote</a></li>
-                            <li><a href="#">Help &amp; Support Center</a></li>
-                            <li><a href="#">How to get started?</a></li>
-
-                        </ul>
-                    </div>
-                </div>
+                    <?php dynamic_sidebar('foot_sec_widget');?>                        
+                </div>             
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="footer-widget">
                         <h2 class="widget-title">Get In Tuch</h2>

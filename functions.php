@@ -43,7 +43,21 @@ function wp_car_widgets(){
 	'before_widget' => '<div class="siderbar-widget">',
 	'after_widget'  => '</div>',
 	'before_title'  => '<h4 class="sidebar-widget-title">',
-	'after_title'   => '</h4>' ));
+    'after_title'   => '</h4>' ));
+    register_sidebar(array(
+        'name'          => __( 'Footer First widget', 'wp_car' ),
+        'id'            => 'foot_one_widget',    // ID should be LOWERCASE  ! ! !
+        'before_widget' => '<div class="footer-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h4>' ));
+    register_sidebar(array(
+        'name'          => __( 'Footer Second widget', 'wp_car' ),
+        'id'            => 'foot_sec_widget',    // ID should be LOWERCASE  ! ! !
+        'before_widget' => '<div class="footer-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h4>' ));
 }
 add_action('widgets_init', 'wp_car_widgets');
 
