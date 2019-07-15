@@ -79,49 +79,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="footer-widget">
-                        <h2 class="widget-title">Car Care </h2>
-                        <p>Lorem ipsum dolor sit amet, consecting elit, sed diam nonummy nibhnt.</p>
-                        <ul class="get-tuch">
-                            <li><i class="fa fa-map-marker"></i> House 248/1, Road No-27, Nirala R/A, Khulna, Khulna-9200.</li>
-                            <li><i class="fa fa-phone-square"></i> Mobile: <a href="#">+001911 - 467325</a></li>
-                            <li><i class="fa fa-envelope"></i> Email: <a href="#">info@domain.com</a></li>
-                        </ul>
-                        <div class="social-icon">
-                            <ul>
-                                <li class="transition7s"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="transition7s"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li class="transition7s"><a href="#"><i class="fa fa-skype"></i></a></li>
-                                <li class="transition7s"><a href="#"><i class="fa fa-rss"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <?php dynamic_sidebar('foot_one_widget');?>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <?php dynamic_sidebar('foot_sec_widget');?>                        
-                </div>             
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="footer-widget">
-                        <h2 class="widget-title">Get In Tuch</h2>
-                        <form id="footer-contact-form-us" name="footer-contact-form-us" class="" method="post" action="contact.php">
-                            <div class="form-group">
-                                <input type="text" class="form-control required name" name="name" placeholder="Name" aria-required="true" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control required name" name="email" placeholder="Email" aria-required="true" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control required" rows="3" placeholder="Message" required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-                        </form>
-                    </div>
-                </div>
+                <?php dynamic_sidebar( 'foot_widget' );?>                 
             </div>
         </div>
     </div>

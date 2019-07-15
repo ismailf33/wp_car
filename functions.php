@@ -46,19 +46,13 @@ function wp_car_widgets(){
     'after_title'   => '</h4>' ));
     register_sidebar(array(
         'name'          => esc_html__( 'Footer First widget', 'wp_car' ),
-        'id'            => 'foot_one_widget',    // ID should be LOWERCASE  ! ! !
-        'before_widget' => '<div class="footer-widget">',
-        'after_widget'  => '</div>',
+        'description'          => esc_html__( 'Footer widget Here.......', 'wp_car' ),
+        'id'            => 'foot_widget',    // ID should be LOWERCASE  ! ! !
+        'before_widget' => '<div class="col-md-3 col-sm-6 col-xs-12"> <div class="footer-widget">',
+        'after_widget'  => '</div></div>',
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h4>' ));
-    register_sidebar(array(
-        'name'          => esc_html__( 'Footer Second widget', 'wp_car' ),
-        'id'            => 'foot_sec_widget',    // ID should be LOWERCASE  ! ! !
-        'before_widget' => '<div class="footer-widget">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h4>' ));
-}
+    }
 add_action('widgets_init', 'wp_car_widgets');
 
 
