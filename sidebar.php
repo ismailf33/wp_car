@@ -35,9 +35,7 @@
                                );?>
                             </ul>
                         </div>
-                        <div class="siderbar-widget">
-                                                 
-                        </div>    
+                        <?php dynamic_sidebar( 'head_widget' );?>   
                         <div class="siderbar-widget">
                             <h4 class="sidebar-widget-title">RECENT NEWS</h4>
                             <div class="widget-news">

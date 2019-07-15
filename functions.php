@@ -1,10 +1,10 @@
 <?php
 add_action('after_setup_theme' , 'wp_car_action');
 function wp_car_action(){
-add_theme_support('post-formats',array('video','audio','aside','gallery'));
-add_theme_support('post-thumbnails' , array('post' , 'page'));
-set_post_thumbnail_size( 200, 200, true );
-add_image_size( 'myThumb', 400, 400 );
+    add_theme_support('post-formats',array('video','audio','aside','gallery'));
+    add_theme_support('post-thumbnails' , array('post' , 'page'));
+    set_post_thumbnail_size( 200, 200, true );
+    add_image_size( 'myThumb', 400, 400 );
 }
 add_action('wp_enqueue_scripts' , 'wp_car_enqueue');
 function wp_car_enqueue(){
