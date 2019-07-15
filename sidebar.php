@@ -26,11 +26,13 @@
                         <div class="siderbar-widget">
                             <h4 class="sidebar-widget-title">ARCHIVES</h4>
                             <ul>
-                                <li><a href="#">January 2017 <span>(15)</span></a></li>
-                                <li><a href="#">Februaty 2017 <span>(112)</span></a></li>
-                                <li><a href="#">March 2017 <span>(4)</span></a></li>
-                                <li><a href="#">April 2017<span>(14)</span></a></li>
-                                <li><a href="#">May 2017 <span>(90)</span></a></li>
+                               <?php wp_get_archives(
+                                   array(
+                                    'type'            => 'monthly',
+                                    'limit'           => 12,                                    
+                                    'order'           => 'DESC'    
+                                   )
+                               );?>
                             </ul>
                         </div>
                         <div class="siderbar-widget">
