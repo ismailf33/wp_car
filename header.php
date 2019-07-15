@@ -57,12 +57,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3 social">
-                            <div class="header-top-search">
-                                <form action="#">
-                                    <input type="text" placeholder="search">
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                </form>
-                            </div>
+                         <?php get_search_form();?>  
                         </div>
                     </div>
                 </div>
