@@ -38,21 +38,21 @@ add_action('init', 'wp_car_menu');
 
 function wp_car_widgets(){
     register_sidebar(array(
-    'name'          => __( 'Header widget', 'wp_car' ),
+    'name'          => esc_html__( 'Header widget', 'wp_car' ),
 	'id'            => 'head_widget',    // ID should be LOWERCASE  ! ! !
 	'before_widget' => '<div class="siderbar-widget">',
 	'after_widget'  => '</div>',
 	'before_title'  => '<h4 class="sidebar-widget-title">',
     'after_title'   => '</h4>' ));
     register_sidebar(array(
-        'name'          => __( 'Footer First widget', 'wp_car' ),
+        'name'          => esc_html__( 'Footer First widget', 'wp_car' ),
         'id'            => 'foot_one_widget',    // ID should be LOWERCASE  ! ! !
         'before_widget' => '<div class="footer-widget">',
         'after_widget'  => '</div>',
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h4>' ));
     register_sidebar(array(
-        'name'          => __( 'Footer Second widget', 'wp_car' ),
+        'name'          => esc_html__( 'Footer Second widget', 'wp_car' ),
         'id'            => 'foot_sec_widget',    // ID should be LOWERCASE  ! ! !
         'before_widget' => '<div class="footer-widget">',
         'after_widget'  => '</div>',
