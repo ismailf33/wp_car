@@ -12,7 +12,7 @@
                         <div class="siderbar-widget">
                             <h4 class="sidebar-widget-title">Category</h4>
                             <ul>
-                            <?php    
+                        <?php    
                             $args = array(
                                 'orderby'  => 'slug',
                                 'parent' => 0
