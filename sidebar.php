@@ -36,6 +36,9 @@
                             </ul>
                         </div>
                         <div class="siderbar-widget">
+                                                 
+                        </div>    
+                        <div class="siderbar-widget">
                             <h4 class="sidebar-widget-title">RECENT NEWS</h4>
                             <div class="widget-news">
                                 <a href="#"><img src="<?php echo get_template_directory_uri();?>/images/resource/blog-1.jpg" alt=""></a>
