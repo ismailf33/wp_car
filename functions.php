@@ -56,9 +56,9 @@ function wp_car_widgets(){
 add_action('widgets_init', 'wp_car_widgets');
 
 function commnets_move_top_to_bottom($fields){
-$comment_field = $fields['name'];
-unset($fields['name']);
-$fields['name'] = $comment_field;
+$comment_field = $fields['comment'];
+unset($fields['comment']);
+$fields['comment'] = $comment_field;
 return $fields;
 }
 add_action('comment_form_fields', 'commnets_move_top_to_bottom'); 
