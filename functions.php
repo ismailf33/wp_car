@@ -66,6 +66,9 @@ add_action('comment_form_fields', 'commnets_move_top_to_bottom');
 
 function commnets_field_remove($fields){
 unset($fields['email'] );
+unset($fields['author'] );
+unset($fields['url'] );
+unset($fields['comment'] );
 return $fields;
 }
 add_action('comment_form_fields', 'commnets_field_remove'); 
