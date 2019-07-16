@@ -35,7 +35,30 @@
                                );?>
                             </ul>
                         </div>
-                        <?php dynamic_sidebar( 'head_widget' );?>   
+                        <?php dynamic_sidebar( 'head_widget' );?> 
+                        <!--  -->  
+                        <div class="siderbar-widget">
+                            <h4 class="sidebar-widget-title">Test Category</h4>
+                        <?php 
+                        $test = new WP_Query(array( 
+                        'post_type' => 'post',
+                        'posts_per_page' => 2, 
+                        'order_by'  => 'title',
+                        'order' => 'DESC',
+                        'category_name' => 'test'   
+                        ));                   
+                        ?>           
+                    <?php  if(have_posts()) : while( $test->have_posts()) : $test->the_post(); ?>  
+                            <div class="widget-news">
+                                <a href="<?php the_permalink();?>"><?php the_post_thumbnail( 'myThumb',array('class' => 'post-thumb' )); /*----this class using for image style-----*/?></a>
+                                <div class="news-text">
+                                   <p><?php the_title();?></p>
+                                    <a class="" href="<?php the_permalink();?>">Read More</a>
+                                </div>
+                            </div> 
+                    <?php endwhile;?>
+                    <?php endif;?>                           
+                        </div>
                         <div class="siderbar-widget">
                             <h4 class="sidebar-widget-title">RECENT NEWS</h4>
                             <div class="widget-news">
@@ -44,22 +67,8 @@
                                     <p>The Act makes provision for the interpretation of Acts of Parliament.</p>
                                     <a class="" href="#">Read More</a>
                                 </div>
-                            </div>
-                            <div class="widget-news">
-                                <a href="#"><img src="<?php echo get_template_directory_uri();?>/images/resource/blog-2.jpg" alt=""></a>
-                                <div class="news-text">
-                                    <p>The Act makes provision for the interpretation of Acts of Parliament.</p>
-                                    <a class="" href="#">Read More</a>
-                                </div>
-                            </div>
-                            <div class="widget-news">
-                                <a href="#"><img src="<?php echo get_template_directory_uri();?>/images/resource/blog-3.jpg" alt=""></a>
-                                <div class="news-text">
-                                    <p>The Act makes provision for the interpretation of Acts of Parliament.</p>
-                                    <a class="" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
+                            </div>                          
+                        </div>      
                         <div class="siderbar-widget">
                             <h4 class="sidebar-widget-title">Tags</h4>
                             <ul class="tag-list">
