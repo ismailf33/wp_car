@@ -38,13 +38,13 @@
                         <?php dynamic_sidebar( 'head_widget' );?> 
                         <!--  -->  
                         <div class="siderbar-widget">
-                            <h4 class="sidebar-widget-title">Test Category</h4>
+                            <h4 class="sidebar-widget-title">Random post by Category</h4>
                         <?php 
                         $test = new WP_Query(array( 
                         'post_type' => 'post',
-                        'posts_per_page' => 2, 
-                        'order_by'  => 'title',
-                        'order' => 'DESC',
+                        'posts_per_page' => 3, 
+                        'orderby' => 'rand',
+                        'order' => 'ASC',
                         'category_name' => 'test'   
                         ));                   
                         ?>           
