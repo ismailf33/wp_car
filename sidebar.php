@@ -44,8 +44,7 @@
                         'post_type' => 'post',
                         'posts_per_page' => 3, 
                         'orderby' => 'rand',
-                        'order' => 'ASC',
-                        'category_name' => 'test'   
+                        'order' => 'ASC'                       
                         ));                   
                         ?>           
                     <?php  if(have_posts()) : while( $test->have_posts()) : $test->the_post(); ?>  
