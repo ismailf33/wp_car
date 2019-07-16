@@ -63,3 +63,11 @@ return $fields;
 }
 add_action('comment_form_fields', 'commnets_move_top_to_bottom'); 
 
+
+function commnets_field_remove($fields){
+unset($fields['email'] );
+return $fields;
+}
+add_action('comment_form_fields', 'commnets_field_remove'); 
+
+
