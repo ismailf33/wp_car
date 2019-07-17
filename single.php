@@ -53,9 +53,9 @@
            <div class="row">
                         <div class="col-md-12">
                             <div class="bio-info-area">
-                                <h4><span>Author : </span> <a href="http://localhost/mywordpress/blog/author/admin/" title="Posts by Ruhul amin" rel="author">Ruhul amin</a> <strong>Total post : 14</strong></h4>
-                                <img alt="" src="http://1.gravatar.com/avatar/42bb3bedeb706e06a38757a8126eb5e9?s=96&amp;r=g" srcset="http://1.gravatar.com/avatar/42bb3bedeb706e06a38757a8126eb5e9?s=96&amp;r=g 2x" class="avatar avatar-96 photo" width="96" height="96">                            
-                                <p>Now testing Bangladesh is our home land and i love my country.Bangladesh is our home land and i love my country.Bangladesh is our home land and i love my country.Bangladesh is our home land and i love my country.Bangladesh is our home land and i love my country.</p>
+                                <h4><span>Author : </span> <?php the_author_posts_link();?> <strong>Total post : <?php echo  get_the_author_posts();?></strong></h4>
+                                <?php echo get_avatar(get_the_author_meta('ID') , $size, $default, $alt, $args )?>                       
+                               <?php the_author_meta('description')?>
                                 <div class="author-info">
                                     <ul>
                                         <li><a href="#">View Author All Post</a> </li>
