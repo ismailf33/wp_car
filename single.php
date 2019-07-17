@@ -21,17 +21,30 @@
                         <div class="col-md-12">
                             <div class="related_post_area">
                                 <h3>Related Posts</h3>
-                                <?php
-                                
-                                
-                                
-                                ?>
-                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                        <div class="related_post_item">
-                                             <img class="img-responsive" title="Tooltip on left" src="<?php get_template_directory_uri();?>/images/resource/blog-2.jpg" alt="">                                            <h2><a href="">Gilded (covered in gold), arrive (come somewhere)</a></h2>
-                                            <p>Saudi Arabia has a king. He is King Salman. He travels to Indonesia. He stays there for 9 days. King Salman is the first Saudi king to visit Indonesia in 50 years. King Salman does not travel lightly. He brings 500 tons of things with him. Five hundred tons is as much as 200 African […]</p>
-                                        </div>
-                                    </div>                                                                       
+                    <?php
+                        $tags = wp_get_post_tags($post->ID);
+                    if($tags){
+                        $first_tag = $tags[0]->term_id;
+                        $my_query = new WP_Query(array(
+                         'tag__in' =>array($first_tag),
+                         'post__not_in' =>array($post->ID),
+                         'posts_per_page' =>5, 
+                         'caller_get_posts' =>1    
+                        )); 
+                    if( $my_query->have_posts()){
+                     while($my_query->have_posts()) : $my_query->the_post(); ?> 
+                      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="related_post_item">
+                                   <?php the_post_thumbnail( 'myThumb',array('class' => 'post-thumb' )); /*----this class using for image style-----*/?> 
+                                    <h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+                                <p><?php the_excerpt('30');?></p>
+                            </div>
+                        </div>  
+                        <?php  
+                                endwhile;
+                                }  wp_reset_query();            
+                            }                                                
+                        ?>                                                                                                      
                             </div>
                         </div>
                     </div>
