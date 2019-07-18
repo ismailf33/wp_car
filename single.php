@@ -59,9 +59,9 @@
                                 <div class="author-info">
                                     <ul>
                                         <li><a href="#">View Author All Post</a> </li>
-                                        <li><a href="http://www.twitter.com/ruhul2s">Twitter</a> </li>
-                                        <li><a href="http://www.facebook.com/ruhul2s">Facebook</a> </li>
-                                        <li><a href="http://www.googlePlus.com/ruhul2s">Google Plus</a> </li>
+                                        <li><a href="<?php the_author_meta('twitter');?>">Twitter</a> </li>
+                                        <li><a href="<?php the_author_meta('facebook');?>">Facebook</a> </li>
+                                        <li><a href="<?php the_author_meta('linkedin');?>">Google Plus</a> </li>
                                     </ul>
                                 </div>
                             </div>
