@@ -152,3 +152,42 @@ function slider_gallery_taxonomy() {
     );
 }  
 add_action( 'init', 'slider_gallery_taxonomy');
+
+//Custom meta-box
+function slider_custom_meta(){
+ add_meta_box( 'slider_meta', __('Others section' , 'carnews'), 'slider_meta_callback' , 'slider-items');   
+}
+add_action('add_meta_boxes' , 'slider_custom_meta');
+//Field
+function slider_meta_callback($post ) {
+    wp_nonce_field( basename( __FILE__), 'slider_nonce');
+     $slider_stored_meta = get_post_meta( $post->ID);
+?>
+<input type="text" name="meta-subtitle-slider" value="
+<?php if ( isset ($slider_stored_meta['meta-subtitle-slider'] ) ){ echo $slider_stored_meta['meta-subtitle-slider'][0]; }?>" 
+style=" width: 100%; font-size: 16px; margin-bottom:20px;" placeholder="Enter Sub Title Here">
+
+<input type="text" name="meta-url-slider" value="
+<?php if ( isset ($slider_stored_meta['meta-url-slider'] ) ){ echo $slider_stored_meta['meta-url-slider'][0]; }?>" 
+style=" width: 100%; font-size: 16px;" placeholder="Enter Url name Here..">
+    <?php
+}
+//save field value 
+function slider_meta_save( $post_id ){
+// Checks save status 
+$is_autosave = wp_is_post_autosave( $post_id );
+$is_revision = wp_is_post_revision ($post_id); 
+$is_valid_nonce = ( isset($_POST[ 'slider_nonce'] ) && wp_verify_nonce( $_POST[ 'slider_nonce'
+], basename( __FILE__))) ? 'true': 'false';
+// Exits script depending on save status 
+if ( $is_autosave || $is_revision || !$is_valid_nonce ) {
+return;
+}
+if(isset($_POST['meta-subtitle-slider'])){
+    update_post_meta( $post_id, 'meta-subtitle-slider', sanitize_text_field($_POST['meta-subtitle-slider']));
+    }
+if(isset($_POST['meta-url-slider'])){
+    update_post_meta( $post_id, 'meta-url-slider', sanitize_text_field($_POST['meta-url-slider']));
+    }
+}
+add_action('save_post' , 'slider_meta_save');
