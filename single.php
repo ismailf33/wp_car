@@ -13,12 +13,7 @@
                     <div class="single-page-details">
                         <h2><?php the_title();?></h2>                      
                         <h2><?php the_content();?></h2>
-                        <?php
-                        $posttags = get_the_tags();
-                        if ($posttags) {
-                        foreach($posttags as $tag) { ?>
-                        <a href="<?php echo $tag->term_id; ?> "><?php echo $tag->name . ' '; ?></a>                            
-                     <?php   }} ?>
+                        <p><?php the_tags();?></p>
                     </div>
                 <?php }} else{?> 
             <h2 style="text-align:center;"> No post here !!!  </h2>        

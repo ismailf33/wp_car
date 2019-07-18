@@ -11,7 +11,7 @@
                  the_post();   
                 ?>    
                     <div class="single-page-details">
-                        <h2><?php the_title();?> Page.php </h2>                      
+                        <h2><?php the_title();?> </h2>                      
                         <h2><?php the_content();?></h2>
                     </div>
                 <?php }} else{?> 
