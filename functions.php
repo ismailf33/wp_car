@@ -5,7 +5,7 @@ function wp_car_action(){
     add_theme_support('post-thumbnails' , array('post' , 'page','slider-items'));
     set_post_thumbnail_size( 200, 200, true );
     add_image_size( 'myThumb', 400, 400 );
-    add_image_size( 'slider-items', 400, 400 );
+    add_image_size('slider-items', 1900, 900);
 }
 add_action('wp_enqueue_scripts' , 'wp_car_enqueue');
 function wp_car_enqueue(){
