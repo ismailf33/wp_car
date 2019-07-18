@@ -73,4 +73,40 @@ return $fields;
 }
 add_action('comment_form_fields', 'commnets_field_remove'); 
 
+function show_extra_profile_fields($user){ ?>
+<h3>Extra profile information</h3>
+<table class="form-table">
+<tr>
+    <th><label for="facebook">Facebook</label></th>
+    <td>
+        <input type="text" name="facebook" id="facebook" value="<?php echo esc_attr(get_the_author_meta('facebook' , $user->ID));?>" class="regular-text"> <br>
+        <span class="description">Please enter your facebook profile link . [e.g http:// www.facebook.com/ismail.alif]</span>
+    </td>
+</tr>
+<tr>
+    <th><label for="facebook">Twitter</label></th>
+    <td>
+        <input type="text" name="twitter" id="twitter" value="<?php echo esc_attr(get_the_author_meta('twitter' , $user->ID));?>" class="regular-text"> <br>
+        <span class="description">Please enter your twitter profile link . [e.g http:// www.twitter.com/ismail.alif]</span>
+    </td>
+</tr>
+<tr>
+    <th><label for="facebook">Linkedin</label></th>
+    <td>
+        <input type="text" name="linkedin" id="linkedin" value="<?php echo esc_attr(get_the_author_meta('linkedin' , $user->ID));?>" class="regular-text"> <br>
+        <span class="description">Please enter your linkedin profile link . [e.g http:// www.linkedin.com/ismail.alif]</span>
+    </td>
+</tr>
 
+</table>
+<?php }
+add_action('show_user_profile', 'show_extra_profile_fields');
+function save_extra_profile_fields($user_id){
+    if( !current_user_can('edit_user' , $user_id))
+    return false;
+    update_user_meta( $user_id, 'facebook', $_POST['facebook']);
+    update_user_meta( $user_id, 'twitter', $_POST['twitter']);
+    update_user_meta( $user_id, 'linkedin', $_POST['linkedin']);
+}
+add_action('personal_options_update', 'save_extra_profile_fields');
+add_action('edit_user_profile_update', 'save_extra_profile_fields');
