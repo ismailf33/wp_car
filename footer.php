@@ -65,6 +65,7 @@
         </div>
     </div>
 <!--===/ Right Fixed Appiontment Form ===-->
+
 <!-- Footer ============================================= -->
 <div id="footer-area">
         <div class="container">
@@ -84,7 +85,6 @@
         </div>
     </div>
     <!-- /Footer  -->
-
     <!-- copyright
     ============================================= -->
     <div id="copyright-area">
@@ -104,7 +104,6 @@
     </a>
     <!-- Footer Scripts Area -->
 <!-- <script src="js/jquery-2.2.4.min.js"></script>  -->
-
 <?php wp_footer();?>
 </body>
 </html>
