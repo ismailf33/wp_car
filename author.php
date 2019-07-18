@@ -1,7 +1,5 @@
 <?php get_header();?>
-<?php get_template_part('slider');?>
-    <!-- News / Blog section  
-    ============================================= -->
+
 <div id="news-area" class="section-gray pdb-28 news-section-single">
         <div class="container">
             <div class="row">
@@ -13,14 +11,15 @@
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
              <div class="profile-information-area-left">
                  <h4><?php the_author();?></h4>
-                 <img src="" alt="">
+                <?php echo get_avatar( get_the_author_meta('ID'), $size, $default, $alt, $args);?>
                  <p><?php the_author_meta('description');?></p> 
                  <div class="profile-basic-information">
                     <ul>
+                        <li>Total Posts : <span><?php echo get_the_author_posts();?></span></li>
                         <li> <span></span></li>
-                        <li> <span></span></li>
-                        <li><a href=""></a> </li>
-                        <li><a href=""></a> </li>
+                        <li><a href="<?php the_author_meta('facebook');?>">Facebook</a></li>
+                        <li><a href="<?php the_author_meta('twitter');?>">Twitter</a></li>
+                        <li>Email : <?php the_author_meta('user_email');?></li>
                     </ul>
                  </div>
              </div>   
@@ -28,20 +27,30 @@
         <!-- Profile-information-area-right -->
         <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
             <div class="profile-information-area-right">
+            <?php $i=0 ;?>    
+            <?php  if(have_posts()){
+                while(have_posts()){ 
+                the_post();    ?>
+            <?php if( $i == 0 or $i == 1 or  $i == 2){?>
                 <div class="author-recent-post">
-                 <p>
-                     <img src="" alt="">
-                </p>
+                    <h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>               
+                    <img src="" alt="">
+                <p><?php the_excerpt();?></p>
                  
                     <div class="author-post-info">
                         <ul>
-                            <li><a href=""></a> </li>
-                            <li><a href=""></a> </li>
-                            <li><a href=""></a> </li>
-                            <li><a href=""></a> </li>
+                            <li><a href="">On : <?php the_author(); ?></a> </li>
+                            <li><a href=""></a>Date : <?php the_date(); ?> </li>
+                            <li><a href="">Category : <?php the_category(' , ')?></a></li>
+                            <li><?php
+                                                comments_popup_link( 'No comments', '1 comment', '% comments', 'comments-link');
+                                                ?></li>
                         </ul>
                     </div>
                  </div>
+                 <?php } 
+                    $i++ ;?>          
+                <?php  }} ?>   
              </div>   
             </div>
         </div>
@@ -50,10 +59,11 @@
 </div>
                 <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ftl">
                     <div class="row">
-                    <?php 
-                        if(have_posts()){
+                    <?php $i=0 ;?>    
+                    <?php  if(have_posts()){
                         while(have_posts()){ 
-                    the_post();    ?>
+                        the_post();    ?>
+                    <?php if( $i !=0 and $i !=1 and  $i !=2){?>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="post-box">
                                 <div class="inner-post-box">
@@ -86,6 +96,8 @@
                                 </div>
                             </div>
                         </div>
+                    <?php } 
+                    $i++ ;?>          
                 <?php  }} ?>                                      
                         <div class="col-md-12">
                            <?php the_posts_pagination(array('screen_reader_text' =>' '));?>
