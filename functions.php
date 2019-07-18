@@ -107,3 +107,30 @@ function save_extra_profile_fields($user_id){
 }
 add_action('personal_options_update', 'save_extra_profile_fields');
 add_action('edit_user_profile_update', 'save_extra_profile_fields');
+
+
+
+add_action('init', 'slider_gallery');
+function slider_gallery() {
+     register_post_type( 'Slider-items', 
+     array(
+         'labels' => array(
+        'name' => __('Slider'),
+        'singular_name' => __('Slider'),
+        'menu_name' => _( 'Slider'), 
+        'name_admin_bar' => __( 'Add Slider' ), 
+        'all_items' =>__( 'All Slider' ),
+        'add_new' => _( 'Add Slider' ), 
+        'add_new_item' => __( 'Add Slider' ),
+        'edit_item' => __( 'Edit Slider' ), 
+        'new_item' => __('New Slider' ), 
+        'view_item' => __( 'View Slider' ), 
+        'search_items' => __('Search Slider')
+         ),
+    'public' => true, 
+    'has_archive' => true, 
+    'rewrite' => array( 'slug' => 'Slider-item' ), 
+    'menu_position' => 8, 
+    'menu_icon' => 'dashicons-products', 
+    'supports' => array( 'title', 'thumbnail', 'editor' )));
+        }
