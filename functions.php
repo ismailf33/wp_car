@@ -2,9 +2,10 @@
 add_action('after_setup_theme' , 'wp_car_action');
 function wp_car_action(){
     add_theme_support('post-formats',array('video','audio','aside','gallery'));
-    add_theme_support('post-thumbnails' , array('post' , 'page'));
+    add_theme_support('post-thumbnails' , array('post' , 'page','slider-items'));
     set_post_thumbnail_size( 200, 200, true );
     add_image_size( 'myThumb', 400, 400 );
+    add_image_size( 'slider-items', 400, 400 );
 }
 add_action('wp_enqueue_scripts' , 'wp_car_enqueue');
 function wp_car_enqueue(){
@@ -112,7 +113,7 @@ add_action('edit_user_profile_update', 'save_extra_profile_fields');
 
 add_action('init', 'slider_gallery');
 function slider_gallery() {
-     register_post_type( 'Slider-items', 
+     register_post_type( 'slider-items', 
      array(
          'labels' => array(
         'name' => __('Slider'),
@@ -129,8 +130,8 @@ function slider_gallery() {
          ),
     'public' => true, 
     'has_archive' => true, 
-    'rewrite' => array( 'slug' => 'Slider-item' ), 
-    'menu_position' => 8, 
+    'rewrite' => array( 'slug' => 'slider-item' ), 
+    'menu_position' => 2, 
     'menu_icon' => 'dashicons-products', 
     'supports' => array( 'title', 'thumbnail', 'editor' )));
         }
