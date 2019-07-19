@@ -15,8 +15,7 @@
     $m_name_subtitle = ''; 
     $tbl_postmeta = $wpdb->prefix."postmeta"; 
     $meta_name_subtitle = 'meta-subtitle-slider'; 
-    $query_result = "select * from $tbl_postmeta where post_id='$this_id' AND meta_key='$
-    meta_name_subtitle'"; 
+    $query_result = "select * from $tbl_postmeta where post_id='$this_id' AND meta_key='$meta_name_subtitle' "; 
     $result = $wpdb->get_results($query_result); 
     foreach($result as $row){
     $m_name_subtitle = $row->meta_value;
@@ -26,10 +25,10 @@
         <div class="overlay"></div>
         <div class="slide-description">
             <div class="animate-item">
-                <h2>Welcome to Our Car Care House!!!</h2>
+                <h2><?php the_title();?></h2>
             </div>
             <div class="animate-item">
-                <h3>Top One Car Care in your city with very good quality Engr.</h3>
+                <h3><?php echo  $m_name_subtitle; ?></h3>
             </div>
             <div class="animate-item">
                 <a class="btn-1 btn btn-primary" href="#">Contact</a>
