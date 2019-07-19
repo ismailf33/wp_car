@@ -167,10 +167,7 @@ function slider_meta_callback($post ) {
 <?php if ( isset ($slider_stored_meta['meta-subtitle-slider'] ) ){ echo $slider_stored_meta['meta-subtitle-slider'][0]; }?>" 
 style=" width: 100%; font-size: 16px; margin-bottom:20px;" placeholder="Enter Sub Title Here">
 
-<input type="text" name="meta-url-slider" value="
-<?php if ( isset ($slider_stored_meta['meta-url-slider'] ) ){ echo $slider_stored_meta['meta-url-slider'][0]; }?>" 
-style=" width: 100%; font-size: 16px;" placeholder="Enter Url name Here..">
-    <?php
+<?php
 }
 //save field value 
 function slider_meta_save( $post_id ){
@@ -185,9 +182,6 @@ return;
 }
 if(isset($_POST['meta-subtitle-slider'])){
     update_post_meta( $post_id, 'meta-subtitle-slider', sanitize_text_field($_POST['meta-subtitle-slider']));
-    }
-if(isset($_POST['meta-url-slider'])){
-    update_post_meta( $post_id, 'meta-url-slider', sanitize_text_field($_POST['meta-url-slider']));
     }
 }
 add_action('save_post' , 'slider_meta_save');
