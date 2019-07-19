@@ -31,8 +31,7 @@
                 <h3><?php echo  $m_name_subtitle; ?></h3>
             </div>
             <div class="animate-item">
-                <a class="btn-1 btn btn-primary" href="#">Contact</a>
-                <a class="btn-2 btn btn-primary" href="#">Appoinment</a>
+                <a class="btn-2 btn btn-primary" href="<?php the_permalink();?>">Read more</a>
             </div>
         </div>
     </div>
