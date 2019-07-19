@@ -33,6 +33,5 @@
             </div>
         </div>
     </div>
-    <!-- /news table  -->
-  
+    <!-- /news table  -->  
  <?php get_footer();?>
