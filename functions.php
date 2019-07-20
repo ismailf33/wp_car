@@ -185,3 +185,8 @@ if(isset($_POST['meta-subtitle-slider'])){
     }
 }
 add_action('save_post' , 'slider_meta_save');
+
+function basic_shortcode($atts , $content = null){
+return('<span style="background:red; color:green;">'.$content.'</span>');
+}
+add_shortcode('basic' , 'basic_shortcode');
