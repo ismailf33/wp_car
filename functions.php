@@ -217,9 +217,16 @@ function class_shortcode($atts , $content = null){
 add_shortcode('class' , 'class_shortcode');
 */
 add_filter('show_admin_bar' , '__return_false');
-add_filter('show_admin_bar' , '__return_false');
+
+//Remove customize link
 function remove_customize_page(){
 global $submenu;
-unset($submenu['themes.php'][6]); //Remove customize link
+unset($submenu['themes.php'][6]); 
 }
 add_action('admin_menu' , 'remove_customize_page');
+
+//Adding customizer into link
+function regiseter_menu_item_for_customizer(){
+add_menu_page( 'Customizer title', 'Theme Options','manage_options', 'customize.php', '', '', 100 );
+}
+add_action('admin_menu' , 'regiseter_menu_item_for_customizer');
