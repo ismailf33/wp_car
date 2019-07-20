@@ -1,6 +1,28 @@
-<?php get_header();?>  
-   <!-- News / Blog section  
-    ============================================= -->
+<?php get_header();?> 
+<?php
+if(have_posts()){
+while(have_posts()){
+    the_post();   
+?>  
+<section id="banner-wrap"  class="banner-section">
+<div class="banner-section-overlay"></div>
+    <div class="banner-section-text">
+        <div class="banner-text-inner">
+            <h2><?php the_title();?></h2>
+            <div class="bradcome">
+                <ul>
+                    <li><a href="<?php esc_url(home_url('/'));?>">Home</a></li>
+                    <li><i class="fa fa-long-arrow-right "></i></li>
+                    <li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<?php }} ?> 
+
+   <!-- News  Blog section  -->
     <div id="news-area" class="section-gray news-section-single">
         <div class="container">
             <div class="row">
