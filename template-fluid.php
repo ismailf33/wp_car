@@ -12,7 +12,7 @@ while(have_posts()){
 <?php
 $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'slider-items');
 ?>
-<section id="banner-wrap"  class="banner-section" style="background:url('<?php echo $large_image_url[0]; ?>')">
+<section id="banner-wrap"  class="banner-section" style="background:url('<?php echo $large_image_url[0];?>') no-repeat !important;">
 <div class="banner-section-overlay"></div>
     <div class="banner-section-text">
         <div class="banner-text-inner">
