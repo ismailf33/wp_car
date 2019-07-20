@@ -278,5 +278,31 @@ $wp_customize->add_control(
      'section'=>'section_2',
      'label' => 'Upload your favicons'
  )));
+/*========== Add section Email and phone number============== */
+$wp_customize->add_section('section_3' , array(
+    'title'=>'Header Text',
+    'priority' =>11,
+    'panel' => 'panel_1'
+));
+/*==========For phone number============== */
+$wp_customize->add_setting('Header_phone' , array(
+    'default'=>'',
+    'transport' => 'postMessage'
+));
+$wp_customize->add_control( 'Header_phone', array(
+     'section'=>'section_3',
+     'label' => 'Header phone number',
+     'type' => 'text'
+ ));
+/*==========For Email============== */
+$wp_customize->add_setting('Header_email' , array(
+    'default'=>'',
+    'transport' => 'postMessage'
+));
+$wp_customize->add_control( 'Header_email', array(
+     'section'=>'section_3',
+     'label' => 'Header Email Adress',
+     'type' => 'text'
+ ));
 }
 add_action('customize_register' , 'carnews_customizer'); 
