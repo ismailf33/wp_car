@@ -189,4 +189,11 @@ add_action('save_post' , 'slider_meta_save');
 function basic_shortcode($atts , $content = null){
 return('<span style="background:red; color:green;">'.$content.'</span>');
 }
-add_shortcode('basic' , 'basic_shortcode');
+add_shortcode('basic' , 'basic_shortcode'); 
+
+function youtube_shortcode($atts , $content = null){
+    return('<iframe width="560" height="315" src="https://www.youtube.com/embed/'.$content.'" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>');
+}
+add_shortcode('youtube' , 'youtube_shortcode');
