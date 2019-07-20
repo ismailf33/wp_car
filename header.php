@@ -56,8 +56,8 @@ wp_enqueue_scripts('comment_replay');
                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-9 company">
                             <div class="company-info">
                                 <ul>
-                                    <li><i class="flaticon-close-envelope"></i><a href="#">example@gmail.com</a></li>
-                                    <li><i class="flaticon-telephone"></i><a href="#">(000)-000-0000</a></li>
+                                    <li><i class="flaticon-close-envelope"></i><a href="#"><?php echo get_theme_mod('Header_email');?></a></li>
+                                    <li><i class="flaticon-telephone"></i><a href="#"><?php echo get_theme_mod('Header_phone');?></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ wp_enqueue_scripts('comment_replay');
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 logo">
-                            <a href="<?php bloginfo( 'url' );  //  site_url('/');  esc_url(home_url('/'));?>"><img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt=""></a>
+                            <a href="<?php bloginfo( 'url' );  //  site_url('/');  esc_url(home_url('/'));?>"><img src="<?php echo get_theme_mod('logo');?>" alt=""></a>
                             <div class="responsive-menu"></div>
                         </div>
                         <div class="col-md-9">
