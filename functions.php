@@ -216,3 +216,4 @@ function class_shortcode($atts , $content = null){
 }
 add_shortcode('class' , 'class_shortcode');
 */
+add_filter('show_admin_bar' , '__return_false');
