@@ -225,8 +225,44 @@ unset($submenu['themes.php'][6]);
 }
 add_action('admin_menu' , 'remove_customize_page');
 
-//Adding customizer into link
+//Adding customizer into Menu
 function regiseter_menu_item_for_customizer(){
 add_menu_page( 'Customizer title', 'Theme Options','manage_options', 'customize.php', '', '', 100 );
 }
 add_action('admin_menu' , 'regiseter_menu_item_for_customizer');
+
+/* Customizer Main*/
+
+function carnews_customizer($wp_customize){
+    $wp_customize->remove_section('nav');
+    $wp_customize->remove_section('static_front_page');
+    $wp_customize->remove_section('title_tagline');
+    $wp_customize->remove_section('widgets');
+/*============Add panel=============== */
+    $wp_customize->add_panel('panel_1' , array(
+        'title'=> __('Header' , 'nsfw'),
+        'priority' => 9,
+        'capability' => 'edit_theme_options',
+        'theme_supports'=> '',       
+        'description'=> false
+    ));
+/*============Add section=============== */
+    $wp_customize->add_section('section_1' , array(
+        'title'=>'logos',
+        'priority' =>9,
+        'panel' => 'panel_1'
+    ));
+/*============Add section=============== */
+    $wp_customize->add_setting('logo' , array(
+        'default'=>'',
+        'transport' => 'refresh'
+    ));
+/*============Add control=============== */
+$wp_customize->add_control(
+   new WP_Customize_Image_Control( $wp_customize , 'logo' , array(
+    'section'=>'section_1',
+    'label' => 'Upload your logo'
+)
+));
+}
+add_action('customize_register' , 'carnews_customizer'); 
