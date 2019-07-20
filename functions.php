@@ -217,3 +217,8 @@ function class_shortcode($atts , $content = null){
 add_shortcode('class' , 'class_shortcode');
 */
 add_filter('show_admin_bar' , '__return_false');
+function remove_customize_page(){
+global $submenu;
+unset($submenu['themes.php'][6]); //Remove customize link
+}
+add_action('admin_menu' , 'remove_customize_page');
