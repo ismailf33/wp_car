@@ -192,9 +192,12 @@ return('<span style="background:red; color:green;">'.$content.'</span>');
 add_shortcode('basic' , 'basic_shortcode'); 
 
 function youtube_shortcode($atts , $content = null){
-    return('<iframe width="560" height="315" src="https://www.youtube.com/embed/'.$content.'" 
+    extract(shortcode_atts(array("video_id " =>'', "width" => '',"height" => ''), $atts) );
+ ?>   
+    <iframe width="<?php echo $width ;?>" height="<?php echo $height ;?>" src="https://www.youtube.com/embed/<?php echo $video_id;?>" 
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>');
+        allowfullscreen></iframe>
+<?php        
 }
 add_shortcode('youtube' , 'youtube_shortcode');
 
