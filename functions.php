@@ -252,7 +252,7 @@ function carnews_customizer($wp_customize){
         'priority' =>9,
         'panel' => 'panel_1'
     ));
-/*============Add section=============== */
+/*============Add settings=============== */
     $wp_customize->add_setting('logo' , array(
         'default'=>'',
         'transport' => 'refresh'
@@ -262,7 +262,21 @@ $wp_customize->add_control(
    new WP_Customize_Image_Control( $wp_customize , 'logo' , array(
     'section'=>'section_1',
     'label' => 'Upload your logo'
-)
+)));
+/*========== Add section two============== */
+$wp_customize->add_section('section_2' , array(
+    'title'=>'favicons',
+    'priority' =>10,
+    'panel' => 'panel_1'
 ));
+$wp_customize->add_setting('favicons' , array(
+    'default'=>'',
+    'transport' => 'refresh'
+));
+$wp_customize->add_control(
+    new WP_Customize_Image_Control( $wp_customize , 'favicons' , array(
+     'section'=>'section_2',
+     'label' => 'Upload your favicons'
+ )));
 }
 add_action('customize_register' , 'carnews_customizer'); 
