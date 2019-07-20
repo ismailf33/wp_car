@@ -331,3 +331,9 @@ $wp_customize->add_control(
 )));
 }
 add_action('customize_register' , 'carnews_customizer'); 
+
+function carnews_customizer_scripts(){
+    wp_enqueue_script('customizer-scripts' , get_template_directory_uri().'/inc/customizer/theme-customize.js' , 
+    array('jquery' , 'customize-preview'));
+}
+add_action('customize_preview_init' , 'carnews_customizer_scripts');
