@@ -197,3 +197,16 @@ function youtube_shortcode($atts , $content = null){
         allowfullscreen></iframe>');
 }
 add_shortcode('youtube' , 'youtube_shortcode');
+
+?>
+<style>
+.boxes{
+    background:red; 
+    color:green;
+}
+</style>
+<?php
+function class_shortcode($atts , $content = null){
+    return('<div class="boxes">'.$content.'</div>');
+}
+add_shortcode('class' , 'class_shortcode');
