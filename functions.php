@@ -241,7 +241,7 @@ function carnews_customizer($wp_customize){
 /*============Add panel=============== */
     $wp_customize->add_panel('panel_1' , array(
         'title'=> __('Header' , 'nsfw'),
-        'priority' => 9,
+        'priority' => 1,
         'capability' => 'edit_theme_options',
         'theme_supports'=> '',       
         'description'=> false
@@ -304,5 +304,30 @@ $wp_customize->add_control( 'Header_email', array(
      'label' => 'Header Email Adress',
      'type' => 'text'
  ));
+ /*====== Add new pannel =========*/
+ $wp_customize->add_panel('panel_2' , array(
+    'priority' => 2,
+    'capability' => 'edit_theme_options',
+    'theme_supports'=> '', 
+    'title'=> __('Color' , 'nsfw'),      
+    'description'=> 'ddd',
+));
+/*============Add section=============== */
+$wp_customize->add_section('section_4' , array(
+    'title'=>'Header color',
+    'priority' =>5,
+    'panel' => 'panel_2'
+));
+/*============Add settings=============== */
+$wp_customize->add_setting('header_bg_color' , array(
+    'default'=>'#ffffff',
+    'transport' => 'postMessage'
+));
+/*============Add control=============== */
+$wp_customize->add_control(
+ new WP_Customize_Color_Control($wp_customize , 'header_bg_color' , array(
+'section'=>'section_4',
+'label' => 'Select your color'
+)));
 }
 add_action('customize_register' , 'carnews_customizer'); 
